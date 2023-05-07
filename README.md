@@ -2,7 +2,6 @@
 
 ## Intro
 
-Make sure to always add component modules
 Make sure to add component modules to app.testing-module.ts
 Do not modify anything else in tests folder (only app.testing-module.ts)
 
@@ -43,11 +42,11 @@ Add Input called `card` of type created ViewModel.
 Bind `title` to `h2`
 Bind `description` to `p`
 
-## Rating View
+### Rating View
 
 Create a component with a selector `rating-view` and html that contains `<i>` icons.
 
-There are 3 possile icon css classes:
+There are 3 possible icon css classes:
 
 - icon-star-empty
 - icon-star-half-empty
@@ -120,7 +119,7 @@ Create component with a selector `address-form` and html that contains `formfiel
   - `Poland` with id `1`
   - `USA` with id `2`
 
-Add Input called `form` of type: `FormGroup` that will contains FormControls for: `street`, `city` and `countryId`
+Add Input called `form` of type: `FormGroup` that will contain FormControls for: `street`, `city` and `countryId`
 
 Bind Input to `formfields` element
 Bind `street` to first input
@@ -129,7 +128,7 @@ Bind `countryId` to select
 
 ### ProductForm
 
-Create compoennt with a selector `product-form` and html that contains `form` with:
+Create component with a selector `product-form` and html that contains `form` with:
 
 - `input` of type `text` representing product name
 - `input` of type `number` representing product price
@@ -139,7 +138,7 @@ Create `ProductFormViewModel` that will contain `id`, `name` and `price` of the 
 
 Add Input called `model` of type `ProductFormViewModel | undefined`
 
-Bind `ProductFormViewModel` to form inside of the component (if it is not undefined).
+Bind `ProductFormViewModel` to form inside the component (if it is not undefined).
 If it is undefined, then show label `Create` on the submit button.
 If it is defined, then show label `Update` on the submit button.
 

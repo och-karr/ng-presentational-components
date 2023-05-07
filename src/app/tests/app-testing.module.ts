@@ -13,6 +13,7 @@ import { ReadMorePanelTestComponent } from './read-more-panel.test-component';
 import {HeaderComponentModule} from "../components/header/header.component-module";
 import {AvatarComponentModule} from "../components/avatar/avatar.component-module";
 import {CardComponentModule} from "../components/card/card.component-module";
+import {RatingViewComponentModule} from "../components/rating-view/rating-view.component-module";
 
 @NgModule({
   declarations: [
@@ -23,14 +24,15 @@ import {CardComponentModule} from "../components/card/card.component-module";
     // AddressFormTestComponent,
     // ProductFormTestComponent,
     // ReadMorePanelTestComponent,
-    // RatingViewTestingComponent
+    RatingViewTestingComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     HeaderComponentModule,
     AvatarComponentModule,
-    CardComponentModule
+    CardComponentModule,
+    RatingViewComponentModule
   ],
   providers: [],
 })

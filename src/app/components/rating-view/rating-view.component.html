@@ -1,0 +1,8 @@
+<i *ngFor="let star of range(max); let i = index;"
+   [ngClass]="{
+           'icon-star-empty': star >= value,
+           'icon-star-half-empty': star + 0.5 === value,
+           'icon-star': star < value && value - star > .5
+         }"
+   (click)="onStarClick(i + 1)">
+</i>

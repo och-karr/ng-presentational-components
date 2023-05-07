@@ -5,15 +5,17 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import {AvatarComponentModule} from "./components/avatar/avatar.component-module";
 import {CardComponentModule} from "./components/card/card.component-module";
+import {RatingViewComponentModule} from "./components/rating-view/rating-view.component-module";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(appRoutes, {initialNavigation: 'enabledBlocking'}),
-    AvatarComponentModule,
-    CardComponentModule
-  ],
+    imports: [
+        BrowserModule,
+        RouterModule.forRoot(appRoutes, {initialNavigation: 'enabledBlocking'}),
+        AvatarComponentModule,
+        CardComponentModule,
+        RatingViewComponentModule
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })

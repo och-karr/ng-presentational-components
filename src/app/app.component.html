@@ -1,4 +1,5 @@
 <header></header>
 <avatar imageUrl="'http://some-image.png" text="Avatar"></avatar>
 <card [card]="data"></card>
+<rating-view [max]="10" [value]=".5" (clicked)="onRatingClick($event)"></rating-view>
 <router-outlet></router-outlet>

@@ -12,4 +12,11 @@ export class AppComponent {
     title: 'Hello',
     description: 'I am a card'
   };
+
+  rating = 3.5;
+
+  onRatingClick(value: number) {
+    console.log(value)
+    this.rating = value;
+  }
 }
