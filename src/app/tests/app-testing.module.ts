@@ -12,12 +12,13 @@ import { RatingViewTestingComponent } from './rating-view.test-component';
 import { ReadMorePanelTestComponent } from './read-more-panel.test-component';
 import {HeaderComponentModule} from "../components/header/header.component-module";
 import {AvatarComponentModule} from "../components/avatar/avatar.component-module";
+import {CardComponentModule} from "../components/card/card.component-module";
 
 @NgModule({
   declarations: [
     HeaderTestComponent,
     AvatarTestComponent,
-    // CardTestComponent,
+    CardTestComponent,
     // HeroTestComponent,
     // AddressFormTestComponent,
     // ProductFormTestComponent,
@@ -28,7 +29,8 @@ import {AvatarComponentModule} from "../components/avatar/avatar.component-modul
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     HeaderComponentModule,
-    AvatarComponentModule
+    AvatarComponentModule,
+    CardComponentModule
   ],
   providers: [],
 })
