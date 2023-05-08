@@ -1,0 +1,17 @@
+<form [formGroup]="form">
+    <label>
+        Street:
+        <input type="text" formControlName="street">
+    </label>
+    <label>
+        City:
+        <input type="text" formControlName="city">
+    </label>
+    <label>
+        Country:
+        <select formControlName="countryId">
+            <option value="1">Poland</option>
+            <option value="2">USA</option>
+        </select>
+    </label>
+</form>

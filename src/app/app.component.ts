@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {CardViewModel} from "./components/card/card.view-model";
 import {ReadMorePanelViewModel} from "./components/read-more-panel/read-more-panel.view-model";
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'components-root',
@@ -16,7 +17,11 @@ export class AppComponent {
 
   rating = 3.5;
 
-
+  myForm: FormGroup = new FormGroup({
+    street: new FormControl(''),
+    city: new FormControl(''),
+    countryId: new FormControl('1'),
+  });
 
   // readonly panel: ReadMorePanelViewModel = {
   //   mainText: 'This is the main text.',

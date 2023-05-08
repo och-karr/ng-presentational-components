@@ -8,6 +8,7 @@ import {CardComponentModule} from "./components/card/card.component-module";
 import {RatingViewComponentModule} from "./components/rating-view/rating-view.component-module";
 import {ReadMorePanelComponentModule} from "./components/read-more-panel/read-more-panel.component-module";
 import {HeroComponentModule} from "./components/hero/hero.component-module";
+import {AddressFormComponentModule} from "./components/address-form/address-form.component-module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import {HeroComponentModule} from "./components/hero/hero.component-module";
         CardComponentModule,
         RatingViewComponentModule,
         ReadMorePanelComponentModule,
-        HeroComponentModule
+        HeroComponentModule,
+        AddressFormComponentModule
     ],
   providers: [],
   bootstrap: [AppComponent],
