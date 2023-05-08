@@ -7,6 +7,7 @@ import {AvatarComponentModule} from "./components/avatar/avatar.component-module
 import {CardComponentModule} from "./components/card/card.component-module";
 import {RatingViewComponentModule} from "./components/rating-view/rating-view.component-module";
 import {ReadMorePanelComponentModule} from "./components/read-more-panel/read-more-panel.component-module";
+import {HeroComponentModule} from "./components/hero/hero.component-module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +17,8 @@ import {ReadMorePanelComponentModule} from "./components/read-more-panel/read-mo
         AvatarComponentModule,
         CardComponentModule,
         RatingViewComponentModule,
-        ReadMorePanelComponentModule
+        ReadMorePanelComponentModule,
+        HeroComponentModule
     ],
   providers: [],
   bootstrap: [AppComponent],

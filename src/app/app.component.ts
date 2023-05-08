@@ -16,6 +16,8 @@ export class AppComponent {
 
   rating = 3.5;
 
+
+
   // readonly panel: ReadMorePanelViewModel = {
   //   mainText: 'This is the main text.',
   //   readMoreText: 'This is the read more text.',
