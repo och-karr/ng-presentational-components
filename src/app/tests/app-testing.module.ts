@@ -14,6 +14,7 @@ import {HeaderComponentModule} from "../components/header/header.component-modul
 import {AvatarComponentModule} from "../components/avatar/avatar.component-module";
 import {CardComponentModule} from "../components/card/card.component-module";
 import {RatingViewComponentModule} from "../components/rating-view/rating-view.component-module";
+import {ReadMorePanelComponentModule} from "../components/read-more-panel/read-more-panel.component-module";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import {RatingViewComponentModule} from "../components/rating-view/rating-view.c
     // HeroTestComponent,
     // AddressFormTestComponent,
     // ProductFormTestComponent,
-    // ReadMorePanelTestComponent,
+    ReadMorePanelTestComponent,
     RatingViewTestingComponent
   ],
   imports: [
@@ -32,7 +33,8 @@ import {RatingViewComponentModule} from "../components/rating-view/rating-view.c
     HeaderComponentModule,
     AvatarComponentModule,
     CardComponentModule,
-    RatingViewComponentModule
+    RatingViewComponentModule,
+    ReadMorePanelComponentModule
   ],
   providers: [],
 })

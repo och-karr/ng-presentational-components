@@ -1,0 +1,13 @@
+<!--I wersja-->
+<!--<section>-->
+<!--    <p>{{ mainText }}</p>-->
+<!--    <button (click)="togglePanel()">{{ buttonLabel }}</button>-->
+<!--    <p *ngIf="isPanelOpen">{{ readMoreText }}</p>-->
+<!--</section>-->
+
+<!--II wersja-->
+<section>
+    <p>{{ mainText }}</p>
+    <button (click)="togglePanel()">{{ buttonLabel$ | async }}</button>
+        <p *ngIf="isPanelOpen$ | async">{{ readMoreText }}</p>
+</section>

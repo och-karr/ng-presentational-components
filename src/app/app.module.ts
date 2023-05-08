@@ -6,6 +6,7 @@ import { appRoutes } from './app.routes';
 import {AvatarComponentModule} from "./components/avatar/avatar.component-module";
 import {CardComponentModule} from "./components/card/card.component-module";
 import {RatingViewComponentModule} from "./components/rating-view/rating-view.component-module";
+import {ReadMorePanelComponentModule} from "./components/read-more-panel/read-more-panel.component-module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +15,8 @@ import {RatingViewComponentModule} from "./components/rating-view/rating-view.co
         RouterModule.forRoot(appRoutes, {initialNavigation: 'enabledBlocking'}),
         AvatarComponentModule,
         CardComponentModule,
-        RatingViewComponentModule
+        RatingViewComponentModule,
+        ReadMorePanelComponentModule
     ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {CardViewModel} from "./components/card/card.view-model";
+import {ReadMorePanelViewModel} from "./components/read-more-panel/read-more-panel.view-model";
 
 @Component({
   selector: 'components-root',
@@ -14,6 +15,13 @@ export class AppComponent {
   };
 
   rating = 3.5;
+
+  // readonly panel: ReadMorePanelViewModel = {
+  //   mainText: 'This is the main text.',
+  //   readMoreText: 'This is the read more text.',
+  //   openLabel: 'Open',
+  //   closedLabel: 'Close'
+  // }
 
   onRatingClick(value: number) {
     console.log(value)
